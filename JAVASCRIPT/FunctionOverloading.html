@@ -1,0 +1,23 @@
+<script>
+//Function Overloading is the process of creating multiple functions with the same name and different number of parameters.
+function add() {
+    console.log(10+20);
+}    
+function add(a,b) {
+    console.log(a+b);
+}  
+function add(a,b,c) {
+    console.log(a+b+c);
+}  
+function add(a,b,c,d) {
+    console.log(a+b+c+d);
+}  
+add();
+add(10,20);
+add(10,20,30);
+add(10,20,30,40);
+
+//Is JS Supports function Overloading?---NO The reason is below--
+/*When we are trying to achieve function overloading in JS then only last declared funtion can be invoked/called and all the previous 
+function declarations will become useless. */
+</script>

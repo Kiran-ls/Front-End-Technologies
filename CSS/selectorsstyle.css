@@ -1,0 +1,60 @@
+/* ID SELECTOR */
+#main-heading {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-style: normal;
+    text-align: center;
+}
+/* CLASS SELECTOR*/
+.para {
+    color: darkcyan;
+    font-family: cursive;
+}
+
+.addon {
+    background-color: bisque;
+    font-weight: bold;
+}
+
+/* ATTRIBUTE SELECTOR */
+input[type="email"] {
+    background-color: lightblue;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+/* DESCENDENT SELECTOR */
+div pre {
+    color: blue;
+}
+
+/* DIRECT CHILD SELECTOR */
+div>pre {
+    color: lightcoral;
+    background-color: aqua;
+}
+
+/*  ADJUSANT SIBLING */
+h3+pre {
+    text-align: center;
+}
+
+/* GENERAL SIBLING */
+h3 ~ pre {
+    background-color: lightpink;
+}
+
+/*ELEMENT SELECTOR */
+h4 {
+    color: brown;
+}
+
+/*GROUP SELECTOR */
+h4, pre, #myid, .myclass {
+    background-color: aqua;
+}
+
+/*UNIVERSAL SELECTOR*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}

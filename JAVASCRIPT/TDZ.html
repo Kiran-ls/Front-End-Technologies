@@ -1,0 +1,33 @@
+<script>
+  /*  let a = 10;
+    console.log(a);
+    console.log(b);
+    let b = 20;
+    const c = 30;
+    console.log(c); */
+
+/*
+LET
+1. The variables which are declared using "let" will be kept inside Temporal dead zone at the time of memory allocation.
+2. Temporal dead zone is the place where uninitialized variables will be present.
+3. The variables which are present inside TDZ connot be accessed.
+
+CONST
+1. The variables which are declared using "const" will be kept inside Temporal dead zone at the time of memory allocation.
+2. Temporal dead zone is the place where uninitialized variables will be present.
+3. The variables which are present inside TDZ connot be accessed.
+*/
+
+// msg();
+// function msg() {
+//     console.log("hello");
+// }
+
+add(10,20);
+function add(a,b) {
+  var z = 200;
+  console.log(a+b+z);
+}
+console.log(a);
+</script>
+

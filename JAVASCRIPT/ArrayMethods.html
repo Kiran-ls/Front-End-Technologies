@@ -1,0 +1,54 @@
+<script>
+    let arr = [10,20,30,40,50] //original array
+    console.log("Initial array:", arr);
+    arr.push(60); //adds at the end
+    console.log("After push:", arr);
+
+    arr.unshift(5); //adds at the beginning
+    console.log("After unshift:", arr);
+
+    arr.pop(); //removes last element
+    console.log("After pop:", arr);
+
+    arr.shift(); //removes first element
+    console.log("After shift:", arr);
+
+    arr[1] = 200; //replaces particular element with index number
+    console.log("After replacing 1st index element", arr);
+
+//SPLICE METHOD
+    arr1 = [100,200,300,400,500,600]
+    console.log("Initial arr1:", arr1);
+    let deleted_ele = arr1.splice(2,3, 900, 800); //it will start from index 2 and removes 3 elements and adds 900,800 in place of them
+    console.log(deleted_ele);
+    console.log("After Splice arr1: ", arr1);
+
+    //SLICE METHOD
+    nums =  [99, 98, 97, 96, 95, 94]
+    console.log("Before slice", nums);
+    let sublist = nums.slice(1,4); //starts from 1st index and go up to 4th index and removes 
+    console.log("After slice:", sublist);
+</script>
+
+<!--
+1.push(): Adds ele at the end of array
+
+2.unshift(): Addds ele at the beginnig of array
+
+3.pop(): removes last element
+
+4.shift(): removes first element
+
+5.splice(): (start index, delete count, elements to be added):
+            splice returns deleted elements.
+
+6.slice(): (start index, end index-1): creates sub-array (does not change original array).
+
+7.indexOf(ele): returns index of specific ele.
+
+8.include(ele): checks if an  element present in array or not. Return true or false.
+
+9.sort(): Sorts the elements in alphabetical order.
+
+10. reverse(): reverse the elements in original array.
+-->

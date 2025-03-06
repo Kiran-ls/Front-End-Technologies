@@ -1,0 +1,54 @@
+<script>
+    //FUNCTION DECLARATION
+//1
+    function add(a,b) {
+    console.log(a+b);
+}
+add(10,20);
+//2
+function mul(x,y) {
+    return x * y;
+}
+console.log(mul(10,20));
+
+
+//FUNCTION EXPRESSION
+//3
+let add1= function(a,b) {
+    console.log(a+b);
+}
+add1(10,20);
+console.log(add1);
+
+//4
+let mul1 = function(a,b) {
+    return a * b;
+}
+console.log(mul(10,20));
+
+
+//ARROW FUNCTION =>
+let add2 = (a,b) => {
+    console.log(a+b);
+}
+add2(10,50);
+
+let mul2 = (a,b) => {
+    return(a*b);
+}
+console.log(mul(10,20));
+
+
+//even or odd using arrow fun.
+const isEven = (Number) => Number % 2 == 0;
+console.log(isEven(10));
+
+//or
+const Even = (num) => {
+    if(num % 2 == 0) {
+        return true;
+    }
+};
+console.log(Even(10));
+
+</script>

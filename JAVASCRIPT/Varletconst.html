@@ -1,0 +1,34 @@
+<script>
+    {
+        var a = 10;
+        console.log("Accessing inside block:", a);
+        a = 20;
+        console.log("After reassignment:", a);
+    }
+    console.log("Accessing outside block",a);
+
+    {
+        let b = 'Code';
+        console.log("Accessing b inside block",b);
+        b = 'Coderz';
+        console.log("After reassignment", b);
+    }
+    //nsole.log("Accessing outside block", b); //NOT Allowed
+
+    {
+        const c = 77.55;
+        console.log("Accessing c inside block",c);
+       // = 70.10;
+       //onsole.log("After reassignment",c); //CONNOT reassign
+    }
+   //onsole.log("outside the block",c); //NOT Allowed
+</script>
+
+<!--
+1. VAR: The variables which are declared using var can be accessed inside the same block, outside the block.
+it can be reassigned anywhere.
+
+2. LET:The variables which are declared using let can be accessed and reassigned in the same block.
+
+3. CONST:The variables which are declared using const can be accessed inside the same the block.
+->

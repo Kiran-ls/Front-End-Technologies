@@ -1,0 +1,85 @@
+/* Style the body */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+/* Style the .outer container */
+.outer {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the .form-group input */
+.form-group input {
+    border: 2px solid black;
+    border-radius: 6px;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 9px 0;
+}
+
+/* Style the .form-container link */
+.form-container a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    margin: 9px;
+}
+
+/* Style the .form-container */
+.form-container {
+    text-align: left;
+    position: relative;
+}
+
+/* Style the .form-group button */
+.form-group button {
+    width: 100%;
+    background-color: orangered;
+    padding: 9px;
+    border-radius: 9px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-family: cursive;
+    margin: 4px 0;
+}
+
+/* Style focused email input label */
+.form-group input[type='email']:focus + label {
+    position: absolute;
+    margin-top: -67px;
+    margin-left: 15px;
+    background-color: white;
+}
+
+/* Style focused password input label */
+.form-group input[type='password']:focus + label {
+    position: absolute;
+    margin-top: -67px;
+    margin-left: 15px;
+    background-color: white;
+}
+
+/* Hide labels when inputs are not focused */
+.form-group input[type='email']:not(:focus) + label,
+.form-group input[type='password']:not(:focus) + label {
+    display: none;
+}
+
+/* Style the .outer img */
+.outer img {
+    width: 150px;
+}

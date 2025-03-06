@@ -1,0 +1,43 @@
+<script>
+    console.log(10, typeof 10); //number
+    console.log(22.44, typeof 22.44); //number
+    console.log("code", typeof "code"); //string
+    console.log("k", typeof "k"); //string
+    console.log(true, typeof true); //boolean
+    console.log(null, typeof null);a //object
+
+    var a;
+    console.log(a);// undefined
+
+    //OBJECTS in JS: JSON, Array, Functions
+
+    //JOSN
+    let s1 = {
+        name : 'kiran',
+        age : 23,
+        study : function() {
+            console.log("Study function!");
+        },
+        marks : 45
+    };
+
+    //accessing object properties and behaviours
+    console.log(s1);
+    console.log(s1.name);
+    console.log(s1.age);
+    console.log(s1.marks);
+    s1.study();
+
+    //array object
+    let arr = [10,20,30,40];
+    console.log(arr, typeof arr);
+    
+    function person() {
+        name = 'K',
+        age = 24
+        play = function() {
+            console.log("playing");
+        }
+    }
+    console.log(person, typeof person);
+</script>

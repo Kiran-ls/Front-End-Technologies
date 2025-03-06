@@ -1,0 +1,54 @@
+<script>
+
+// ITERATION METHODS IN JS(MAP, FILTER, REDUCE, FOREACH)
+//EVEN NUMBERS
+   arr = [10, 11, 12, 13, 14]
+    even = []
+    for (var i = 0; i< arr.length; i++) {
+        if(arr[i] % 2 == 0) {
+            even.push(arr[i]);
+        }
+    }
+console.log("Original array:", arr);
+console.log("Even numbers:", even);
+
+//USING ARROW FUNCTION AND "FILTER"
+arr1 = [10,11,12,13,14]
+even1 = arr1.filter((ele) => ele % 2 == 0)
+console.log(even1);  
+    
+//PRODUCT OF NUMBERS
+var num = [1,2,3,4]
+var product = 1;
+for (var i = 0; i < num.length; i++) {
+    product = product * num[i];
+}
+console.log("Product is:", product);
+
+//USING "REDUCE"
+var num1 = [1,2,3,4]
+var product1 =num1.reduce(function(ele, acc){
+        return ele*acc
+},1)
+console.log("Product is:", product1);
+
+//SUM OF NUMBERS
+var num2 = [1,2,3,4]
+var sum = num2.reduce(function(a,b){
+    return a + b
+}, 0)
+console.log("Sum is:", sum);  
+
+//USING ARROW FUNCTIONS FOR PRODUCT AND SUM 
+var product3 = num2.reduce((a,b) => a * b,1)
+console.log(product3);
+
+var sum3 = num2.reduce((a,b) => a + b,0)
+console.log(sum3);
+
+
+//SQUARE OF ARRAYS USING "MAP"
+var numbers = [1,2,3,4]
+var sq_arr = numbers.map((ele) => ele **2)
+console.log("Square is:", sq_arr);
+</script>
