@@ -1,0 +1,30 @@
+<script>
+    class Employee {
+        constructor(name, id, dept) {
+            this.name = name;
+            this.id = id;
+            this.dept = dept;
+        }
+        work() {
+            console.log(this.name, "with id ", this.id, "is working into", this.dept);
+        }
+        play() {
+            console.log(this.name, "is playing from ", this.dept);
+        }
+        code() {
+            console.log(this.name, "is coding from ", this.dept);
+        }
+    }
+    let e1 = new Employee('Akash','101', 'sales');
+    let e2 = new Employee('Varun','102', 'Dev');
+    let e3 = new Employee('Kishan','103', 'Testing');
+    e1.work();
+    e1.play();
+    e1.code();
+    e2.work();
+    e2.play();
+    e2.code();
+    e3.work();
+    e3.play();
+    e3.code();
+</script>
