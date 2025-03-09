@@ -1,0 +1,19 @@
+<script>
+    function add(...args) {
+        if(args.length == 2) {
+            return args[0] + args[1]; //adds 2 numbers
+        } else if(args.length == 3) {
+            return args[0] + args[1] + args[2];//adds 3 numbers
+        } else {
+            return "Invalid number of arguments"
+        }
+    }
+    console.log(add(1,2));
+    console.log(add(1,2,3));
+    console.log(add(1));
+</script>
+<!--
+1. speard operator is used to collect all the arguments into an actual array, unlike arguments which is an array like object.
+2. It is available in both regular functions and arrow functions
+3. This is particularly usefull when working with variable number of arguments.
+-->
