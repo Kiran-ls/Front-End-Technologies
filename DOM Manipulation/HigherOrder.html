@@ -1,0 +1,57 @@
+<script>
+    function greet(name) {
+        console.log("Name is: ", name);
+        
+    }
+    function processGreet(fun) {
+        fun("Akash");
+    }
+    processGreet(greet);
+
+//OR you can also declare like this
+    function processGreet(fun) {
+        fun("Akash");
+        console.log(fun());
+    }
+    processGreet((name) => console.log("Name is: ", name));
+
+
+    //Addition 
+    function processAdd(add) {
+        add(10,20);
+    }
+    processAdd((a,b) =>console.log(a+b));
+
+    //Multiplication
+    function processMul(mul) {
+        mul(5,5);
+    }
+    processMul((a,b) => console.log(a * b));
+
+
+    //Subtraction
+    function processSub(sub) {
+        sub(10,5);
+    }
+    processSub((a,b) => console.log(a-b));
+
+    //Division
+    function processDiv(div) {
+        div(10,2);
+    }
+    processDiv((a,b) => console.log(a/b));
+
+
+//CallBack functions
+    filter(() => {})
+    map(() => {})
+    reduce(() => {})
+    foreach(() => {})
+</script>
+<!--
+HigherOrder Function:-
+The function which accepts another function as an argument, such Functions are called  as higher order function.
+
+CallBack Function:-
+The function which is being passed an argument to another functions, such functions are called as callBack functions.
+-->

@@ -1,0 +1,29 @@
+<script>
+    //Parent class
+    class Product {
+        constructor(name, price) {
+            this.name = name;
+            this.price = price;
+        }
+        displayInfo() {
+            console.log(`${this.name} book costs $${this.price}`);
+        }
+    }
+
+    //Child class
+    class Book extends Product {
+        constructor(name, price, author, date) {
+            super(name,price);
+            this.author = author;
+            this.date = date;
+        }
+        displayInfo() {
+            super.displayInfo()
+            console.log("Author is:", this.author, "Published Date:", this.date);
+        }
+    }
+    let b1 = new Book("ABC",60,"xyz","12-2-2025");
+    b1.displayInfo();
+    let b2 = new Book("pqr",50,"klm","10-1-2025");
+    b2.displayInfo();
+</script>
