@@ -1,0 +1,20 @@
+<script>
+    let p1 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("fetching the data...!");
+           resolve("12345");  //if data is fetched "resolve" will get executed
+           //reject("Can't fetch the data"); //if cannot fetch the data "reject" will get executed
+        }, 3000);
+    });
+
+    p1.then((data) => {
+        console.log('Fetched data is:', data); 
+    }).catch((msg) => {
+        console.log("Error message:", msg);
+    });
+</script>
+
+<!--
+In promises we will be giving asynchronous tasks means which may create delay.
+The tasks which will fetch data from database may create delay.
+-->
